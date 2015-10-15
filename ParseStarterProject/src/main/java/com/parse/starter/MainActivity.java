@@ -23,7 +23,7 @@ public class MainActivity extends ActionBarActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    System.out.println("Salut tonnouut la monde");
+    System.out.println("Hello world");
 
 
     ParseAnalytics.trackAppOpenedInBackground(getIntent());
