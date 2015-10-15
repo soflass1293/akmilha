@@ -4,8 +4,6 @@ import com.parse.ParseClassName;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
-import java.text.ParseException;
-
 /**
  * Created by Sofienne LASSOUED on 16/10/2015.
  */

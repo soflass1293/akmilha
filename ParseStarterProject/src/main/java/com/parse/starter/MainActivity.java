@@ -12,8 +12,11 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.parse.ParseAnalytics;
+
+import models.Task;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -23,6 +26,13 @@ public class MainActivity extends ActionBarActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
+
+    Task task = new Task();
+    task.setName("Bring the milk");
+    task.setImportant(true);
+    task.setDone(false);
+    task.saveInBackground();
+    Toast.makeText(this, "Done", Toast.LENGTH_LONG).show();
     ParseAnalytics.trackAppOpenedInBackground(getIntent());
   }
 
